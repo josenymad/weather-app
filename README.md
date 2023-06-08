@@ -1,4 +1,5 @@
 # Learning objectives
+
 To be able to answer "yes" to the following questions:
 
 - Can you explain what React is?
