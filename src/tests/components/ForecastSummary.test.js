@@ -4,7 +4,7 @@ import ForecastSummary from "../../components/ForecastSummary";
 
 describe("Forecast Summary", () => {
   const validProps = {
-    date: 1111111,
+    date: 1525046400000,
     description: "Stub description",
     icon: "stubIcon",
     temperature: {
@@ -36,7 +36,7 @@ describe("Forecast Summary", () => {
       />
     );
 
-    expect(getByText("1111111")).toHaveClass("forecast-summary__date");
+    expect(getByText("Mon Apr 30 2018")).toHaveClass("forecast-summary__date");
     expect(getByText("Stub description")).toHaveClass(
       "forecast-summary__description"
     );
