@@ -1,8 +1,8 @@
 import React from "react";
 import iconData from "../data/iconData.json";
 
-function ForecastSummary(forecastData) {
-  const { date, temperature, description, icon } = forecastData;
+function ForecastSummary(props) {
+  const { date, temperature, description, icon, onSelect } = props;
   const weatherCode = Math.floor(icon / 100) * 100;
   const formattedDate = new Date(date).toDateString();
 
@@ -16,6 +16,9 @@ function ForecastSummary(forecastData) {
       <div className="forecast-summary__icon" data-testid="forecast-icon">
         <img src={iconData[weatherCode]} alt="weather icon" />
       </div>
+      <button type="button" onClick={() => onSelect(date)}>
+        More details
+      </button>
     </div>
   );
 }

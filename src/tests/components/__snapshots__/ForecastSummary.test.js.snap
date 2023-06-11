@@ -29,6 +29,11 @@ exports[`Forecast Summary renders correctly 1`] = `
         alt="weather icon"
       />
     </div>
+    <button
+      type="button"
+    >
+      More details
+    </button>
   </div>
 </DocumentFragment>
 `;

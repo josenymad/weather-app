@@ -11,6 +11,7 @@ describe("Forecast Summary", () => {
       min: 12,
       max: 22,
     },
+    onSelect: () => {},
   };
 
   it("renders correctly", () => {
@@ -20,6 +21,7 @@ describe("Forecast Summary", () => {
         description={validProps.description}
         icon={validProps.icon}
         temperature={validProps.temperature}
+        onSelect={validProps.onSelect}
       />
     );
 
