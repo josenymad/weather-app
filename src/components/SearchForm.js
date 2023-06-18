@@ -6,17 +6,13 @@ function SearchForm({ searchText, setSearchText, onSubmit }) {
 
   return (
     <div className="search-form">
-      <label htmlFor="search-location" className="search-form__label">
-        <input
-          type="text"
-          id="search-location"
-          placeholder="City"
-          name="search-location"
-          className="search-form__input"
-          onChange={handleInputChange}
-          value={searchText}
-        />
-      </label>
+      <input
+        type="text"
+        placeholder="City"
+        className="search-form__input"
+        onChange={handleInputChange}
+        value={searchText}
+      />
       <input
         type="submit"
         value="Search"
