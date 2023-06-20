@@ -11,29 +11,33 @@ exports[`Forecast Details renders correctly 1`] = `
       Mon Apr 30 2018
     </h3>
     <div
-      class="forecast-details__max-temp"
+      class="forecast-details__container"
     >
-      Maximum temperature: 22°C
-    </div>
-    <div
-      class="forecast-details__min-temp"
-    >
-      Minimum temperature: 12°C
-    </div>
-    <div
-      class="forecast-details__humidity"
-    >
-      Humidity: 30%
-    </div>
-    <div
-      class="forecast-details__wind-speed"
-    >
-      Wind speed: 60mph
-    </div>
-    <div
-      class="forecast-details__wind-direction"
-    >
-      Wind direction: North
+      <div
+        class="forecast-details__max-temp"
+      >
+        🌡 Top temperature: 22°C
+      </div>
+      <div
+        class="forecast-details__min-temp"
+      >
+        🌡 Minimum temperature: 12°C
+      </div>
+      <div
+        class="forecast-details__humidity"
+      >
+        💧 Humidity: 30%
+      </div>
+      <div
+        class="forecast-details__wind-speed"
+      >
+        💨 Wind speed: 60mph
+      </div>
+      <div
+        class="forecast-details__wind-direction"
+      >
+        🧭 Wind direction: N
+      </div>
     </div>
   </div>
 </DocumentFragment>

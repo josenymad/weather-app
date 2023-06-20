@@ -12,7 +12,7 @@ describe("Forecast Details", () => {
     humidity: 30,
     wind: {
       speed: 60,
-      direction: "North",
+      direction: "n",
     },
   };
 
@@ -25,21 +25,11 @@ describe("Forecast Details", () => {
   it("renders correct values for props", () => {
     const { getByText } = render(<ForecastDetails forecast={validProps} />);
 
-    expect(getByText("Mon Apr 30 2018")).toHaveClass("forecast-details__date");
-    expect(getByText("Maximum temperature: 22°C")).toHaveClass(
-      "forecast-details__max-temp"
-    );
-    expect(getByText("Minimum temperature: 12°C")).toHaveClass(
-      "forecast-details__min-temp"
-    );
-    expect(getByText("Humidity: 30%")).toHaveClass(
-      "forecast-details__humidity"
-    );
-    expect(getByText("Wind speed: 60mph")).toHaveClass(
-      "forecast-details__wind-speed"
-    );
-    expect(getByText("Wind direction: North")).toHaveClass(
-      "forecast-details__wind-direction"
-    );
+    expect(getByText("Mon Apr 30 2018")).toBeInTheDocument();
+    expect(getByText("🌡 Top temperature: 22°C")).toBeInTheDocument();
+    expect(getByText("🌡 Minimum temperature: 12°C")).toBeInTheDocument();
+    expect(getByText("💧 Humidity: 30%")).toBeInTheDocument();
+    expect(getByText("💨 Wind speed: 60mph")).toBeInTheDocument();
+    expect(getByText("🧭 Wind direction: N")).toBeInTheDocument();
   });
 });
