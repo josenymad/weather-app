@@ -10,6 +10,7 @@ const getForecast = async (
   let endpoint = "https://cmd-shift-weather-app.onrender.com/forecast";
 
   if (searchText) {
+    setErrorMessage("");
     endpoint += `?city=${searchText}`;
   }
 

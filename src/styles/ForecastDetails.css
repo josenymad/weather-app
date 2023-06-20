@@ -1,3 +1,14 @@
 .forecast-details {
     text-align: center;
+    background-color: cadetblue;
+    width: 30vw;
+    margin: auto;
+    border-radius: 15vw;
+}
+
+.forecast-details__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30vh;
 }
