@@ -12,3 +12,12 @@ Built using React, this project has taught me a solid understanding of the follo
 - React Hooks
 - React Testing Library
 - Request/Response
+
+## Installation
+
+- Fork this repo
+- Install dependencies with `npm install`
+- Start the app with `npm start`
+
+## Demo
+
